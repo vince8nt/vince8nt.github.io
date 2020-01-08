@@ -2,15 +2,74 @@
 <html>
 	<head>
 		<style>
-			#title{
+			body {
+				background-color: lightblue;
+			}
+			h1, h2 {
 				color: green;
 				text-align: center;
+				font-family: Verdana;
+			}
+			div {
+				background-color: white;
+				border: 10px double green;
+				padding: 8px;
+				margin: 20px;
+
+			}
+			p.box {
+				border-top-style: double;
+				border-right-style: solid;
+				border-bottom-style: double;
+				border-left-style: solid;
+				border-width: 6px 8px 6px 8px;
+				border-color: gray;
+				padding-left: 2px;
+				padding-right: 2px;
+				margin: 20px;
+				font-family: Arial;
+			}
+			a {
+				border: 2px solid;
+				border-radius: 8px;
+				padding-right: 3px;
+				padding-left: 3px;
+			}
+			a:link {
+				color: blue;
+				border-color: blue;
+			}
+			a:visited {
+				color: purple;
+				border-color: purple;
+			}
+			a:hover {
+				color: lightblue;
+				border-color: lightblue;
 			}
 		</style>
 	</head>
 	<body>
-		<p id=title>
-			vince8nt's Website!
+		<h1>
+			Vincent's Website!
+		</h1>
+		<h2>
+			Studies Computer Science at the University of California, Santa Cruz
+		</h2>
+		<p class="box">
+			My name is Vincent Titterton and I'm a second year computer science major at UCSC. I have a passion for game design and hope to feature one of my games on this website soon. 
 		</p>
+		<div>
+			<p>
+				Some usefull links:
+			</p>
+			<p><b><a href="index.html" target="_blank">
+				A link to where you are already
+			</a><a href="https://github.com/vince8nt">
+				My github
+			</a><a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/">
+				My Linkedin
+			</a></b></p>
+		</div>
 	</body>
 </html>
