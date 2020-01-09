@@ -1,75 +1,137 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Vincent's Website</title>
 		<style>
 			body {
 				background-color: lightblue;
+				margin: 0;
 			}
-			h1, h2 {
+			* {
+				box-sizing: border-box;
+			}
+			.header {
+				background-color: lightgray;
 				color: green;
 				text-align: center;
+				padding: 10px;
 				font-family: Verdana;
 			}
-			div {
-				background-color: white;
-				border: 10px double green;
+			.topnav {
+				overflow: hidden;
+				background-color: black;
+			}
+			.topnav a {
+				float: left;
+				color: white;
+				text-align: center;
+				padding: 16px 16px;
+				border-right: 2px solid lightgray;
+			}
+			.topnav a:hover {
+				background-color: lightgray;
+				color: black;
+			}
+			.column {
+				float: left;
+				padding: 10px;
+			}
+			.column.left {
+				width: 35%;
+			}
+			.column.right {
+				width: 65%;
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			@media screen and (max-width: 780px) {
+				.column.left, .column.right {width: 100%;}
+			}
+			.footer {
+				border-top: solid black 8px;
+				background-color: lightgray;
+				color: black;
+				padding: 10px;
+				align-self: bottom;
+			}
+			img.wrap {
+				float: left;
+			}
+			.box {
+				width: 256px;
+				border-top: 9px double black;
+				border-bottom: 9px double black;
+				background-color: lightgray;
 				padding: 8px;
-				margin: 20px;
-
+				text-align: center;
+				margin-top: 8px;
 			}
-			p.box {
-				border-top-style: double;
-				border-right-style: solid;
-				border-bottom-style: double;
-				border-left-style: solid;
-				border-width: 6px 8px 6px 8px;
-				border-color: gray;
-				padding-left: 2px;
-				padding-right: 2px;
-				margin: 20px;
-				font-family: Arial;
-			}
-			a {
-				border: 2px solid;
-				border-radius: 8px;
-				padding-right: 3px;
-				padding-left: 3px;
-			}
-			a:link {
-				color: blue;
-				border-color: blue;
-			}
-			a:visited {
-				color: purple;
-				border-color: purple;
-			}
-			a:hover {
-				color: lightblue;
-				border-color: lightblue;
-			}
+				
 		</style>
 	</head>
 	<body>
-		<h1>
-			Vincent's Website!
-		</h1>
-		<h2>
-			Studies Computer Science at the University of California, Santa Cruz
-		</h2>
-		<p class="box">
-			My name is Vincent Titterton and I'm a second year computer science major at UCSC. I have a passion for game design and hope to feature one of my games on this website soon. 
-		</p>
-		<div>
-			<p>
-				Some usefull links:
-			</p>
-			<p><b><a href="index.html" target="_blank">
-				A link to where you are already
-			</a><a href="https://github.com/vince8nt">
-				My github
-			</a><a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/">
-				My Linkedin
-			</a></b></p>
+
+		<div class="header">
+			<h1>
+				Vincent Titterton
+			</h1>
+			<h2>
+				Studies Computer Science at the University of California, Santa Cruz
+			</h2>
 		</div>
+
+		<div class="topnav">
+			<a href="index.html">
+				Home
+			</a><a href="https://github.com/vince8nt" target="_blank">
+				My github
+			</a><a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/" target="_blank">
+				My Linkedin
+			</a>
+		</div>
+		
+		<div class="row">
+			<div class="column left">
+				<h2>
+					Projects
+				</h2>
+				<p>
+					Check out Github to see the source code!
+
+				</p>
+				<div class="box">
+					<img src="images/battleship.png" alt="Battleship">
+					<p>
+						This is the game from my BattleShip repository on Github. It is a single player Battle Ship game where the goal is to sink all 5 randomly located ships in as few turns as possible.
+					</p>
+				</div>
+				<div class="box">
+					<img src="images/connect4.png" alt="Battleship">
+					<p>
+						This is the game from my connect4 repository on Github. It is a two player game where the goal is to sink get 4 in a row with either X's or O's.
+					</p>
+				</div>
+			</div>
+
+			<div class="column right">
+				<h2>
+					About
+				</h2>
+				<p>
+					<img class="wrap" src="images/vincent.png" alt="Vincent" style="width:140px; height:140px; margin-right:15px">
+					My name is Vincent Titterton and I'm a second year computer science major at UCSC. I have a passion for game design and hope to feature one of my games on this website soon. 
+				</p>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>
+				Contact me at vtittert@ucsc.edu vince8nt@gmail.com
+			</p>
+		</div>
+
 	</body>
 </html>
