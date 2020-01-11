@@ -1,2 +1,2 @@
-This is my website.
-go to https://vince8nt.github.io to visit it!
+HTML/CSS behind my website.
+Go to https://vince8nt.github.io to visit it!
