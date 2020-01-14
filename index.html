@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Vincent's Website</title>
+		<title>Vincent Titterton</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="shortcut icon" href="images/favicon.ico" />
 		<style>
 			body {
 				background-color: white;
@@ -11,113 +12,126 @@
 				background-position: top;
 				background-size: 110%;
 				background-repeat: no-repeat;
-				margin: 0;
-			}
-			* {
-				box-sizing: border-box;
-			}
-			
-			.topnav {
-				overflow: hidden;
-			}
-			.topnav a {
-				float: left;
-				color: black;
-				padding: 16px 16px;
-			}
-			.topnav a:hover {
-				color: blue;
-			}
-
-			.header {
-				color: green;
-				text-align: center;
-				padding: 10px;
-				font-family: Verdana;
-			}
-
-			.column {
-				float: left;
-				text-align: center;
-				padding: 10px;
-				width: 25%;
-			}
-			
-			.row{
-				content: "";
-				display: table;
-				clear: both;
-			}
-			@media screen and (max-width: 900px) {
-				.column {width: 33%;}
-			}
-			@media screen and (max-width: 675px) {
-				.column {width: 50%;}
-			}
-			@media screen and (max-width: 450px) {
-				.column {width: 100%;}
-			}
-			.footer {
-				border-top: solid black 8px;
-				background-color: lightgray;
-				color: black;
-				padding: 10px;
-				align-self: bottom;
-			}
-			img.wrap {
-				float: left;
-			}
 				
+			}
 		</style>
+
 	</head>
 	<body>
 
-		<div class="topnav">
-			<a href="index.html">Home</a>
-			<a href="https://github.com/vince8nt" target="_blank">Github</a>
-			<a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/" target="_blank">Linkedin</a>
+		<div style="padding: 10px;">
+			<a href="index.html" style="padding: 10px;">Home</a>
+			<a href="https://github.com/vince8nt" target="_blank" style="padding: 10px;">
+				<img src="images/github.svg" alt="Github" style="size:  height: 30px; width: 30px;">
+			</a>
+			<a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/" target="_blank" style="padding: 10px;">
+				<img src="images/linkedin.svg" alt="Linkedin" style="size:  height: 30px; width: 30px;">
+			</a>
+			<a href="https://docs.google.com/document/d/1aPh19dza2S5drxq5KndqYDWofQPp_7moQ7hldwlgtAc" target="_blank" style="padding: 10px;">
+				<img src="images/resume.svg" alt="Resume" style="size:  height: 30px; width: 30px;">
+			</a>
+			<a href="mailto:vince8nt@gmail.com" target="_blank" style="padding: 10px;">
+				<img src="images/email.svg" alt="Email" style="size:  height: 30px; width: 30px;">
+			</a>
 		</div>
 
-		<div class="header">
+		<div style="color: green; text-align: center; padding-top: 150px; padding-bottom: 200px; font-family: Verdana;">
 			<h1>Vincent Titterton</h1>
 			<img class = "img-circle" src="images/vincent.png" alt="Vincent">
 			<h2>Studies Computer Science at the University of California, Santa Cruz</h2>
 		</div>
-		
-		<div>
-			<div class="column">
-				<a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/" target="_blank">
-					<img src="images/linkedin.svg" alt="Linkedin" style="height: 200px; width: 200px;">
-				</a>
-				<h2>Linkedin</h2>
-			</div>
-			<div class="column">
-				<a href="https://github.com/vince8nt" target="_blank">
-					<img src="images/github.svg" alt="Github" style="height: 200px; width: 200px;">
-				</a>
-				<h2>Github</h2>
-			</div>
-			<div class="column">
-				<a href="mailto:vince8nt@gmail.com" target="_blank">
-					<img src="images/email.svg" alt="Email" style="height: 200px; width: 200px;">
-				</a>
-				<h2>Email</h2>
-			</div>
-			<div class="column">
-				<a href="https://docs.google.com/document/d/1aPh19dza2S5drxq5KndqYDWofQPp_7moQ7hldwlgtAc" target="_blank">
-					<img src="images/resume.svg" alt="Resume" style="height: 200px; width: 200px;">
-				</a>
-				<h2>Resume</h2>
-			</div>
+
+		<div style="color: blue; text-align: center; font-family: Verdana;">
+			<h1>Some of my Projects:</h1>
 		</div>
+
+		<div class="container-fluid" >
+			
+			<div class="row" style="text-align: center;">
+
+				<div class="col-sm-6">
+
+					<div style="padding: 10px;">
+						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
+							<img src="images/battleship.png" class="card-img-top" alt="Battleship">
+							<div class="card-body" style="background-color: lightgray;">
+							    <h5 class="card-title">Battleship</h5>
+							    
+					    		<p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 4px; color: blue;">Java</p>
+					    		<p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 4px; color: blue;">Swing</p>
+
+							    <p class="card-text">A single player battleship game where
+							     the goal is to sink all 5 ships in as few moves as possible.
+							     Before the game starts, ships are randomly assigned locations
+							     where they don't overlap.</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://github.com/vince8nt/BattleShip" target="_blank" class="btn btn-primary">Source Code</a>
+							</div>
+						</div>
+					</div>
+
+					<div style="padding: 10px;">
+						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
+							<img src="images/connect4.png" class="card-img-top" alt="ConnectFour">
+							<div class="card-body" style="background-color: lightgray;">
+							    <h5 class="card-title">Connect Four</h5>
+							    
+					    		<p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 4px; color: blue;">Java</p>
+						    
+							    <p class="card-text">Simple two player text-based connect four game.
+							     Has a message for winning/loosing/tying and then terminates the program.</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://github.com/vince8nt/connect4" target="_blank" class="btn btn-primary">Source Code</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-6">
+
+					<div style="padding: 10px;">
+						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
+							<img src="images/ticTacToe.png" class="card-img-top" alt="Tic Tac Toe">
+							<div class="card-body" style="background-color: lightgray;">
+							    <h5 class="card-title">Tic Tac Toe</h5>
+							    <p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 4px; color: blue;">Python</p>
+							    <p class="card-text">A single player tic tac toe game. The program checks all possible moves recursively to determine where the best place to move is. With only 9! possible games, this is able to be done in a short amount of time.</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://github.com/vince8nt/tic-tac-toe" target="_blank" class="btn btn-primary">Source Code</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			
+		</div>
+
 
 		<div class="row">
 		</div>
 
-		<div class="footer">
-			<p>
-				Contact me at vtittert@ucsc.edu vince8nt@gmail.com
-			</p>
+		<div class="container-fluid" style="border-top: solid lightblue 8px; background-color: lightgray; padding: 10px; align-self: bottom;">
+			<div class="row">
+				<div class="col-sm-4">
+					<p>
+						© 2020 Vincent Titterton.
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<p>
+						made with Bootstrap
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<a href="https://github.com/vince8nt/vince8nt.github.io" target="_blank" class="btn btn-primary">Source Code</a>
+				</div>
+			</div>
 		</div>
 
 	</body>
