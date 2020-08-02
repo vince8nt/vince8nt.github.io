@@ -2,192 +2,143 @@
 <html>
 	<head>
 		<title>Vincent Titterton</title>
-		<meta content="width=device-width, initial-scale=1" name="viewport">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<style>
 			body {
-				background-color: white;
+				background-color: black;
 				background-image: url("images/clouds.svg");
-				background-position: top;
-				background-size: 110%;
+				background-size: 100%;
 				background-repeat: no-repeat;
+				margin: 0px;
+			}
+
+			/* style for the nav bar */
+			li { float: left; padding-left: 40px; }
+			li a {
+				padding-top: 20px; padding-left: 5px; padding-right: 5px;
+				/* filter black svg to #FFFFFF (white) */
+				filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(254deg) brightness(106%) contrast(100%);
+				transition: all 0.2s;
+			}
+			li a:hover {
+				/* filter black svg to #30D020 (dark green) */
+				filter: invert(62%) sepia(100%) saturate(2189%) hue-rotate(71deg) brightness(102%) contrast(90%);
+			}
+			li a img { height: 30px; width: 30px; }
+
+			.grow {
+				margin-top: 8px;
+				width: 144px;
+				height: 144px;
+				border-radius: 72px;
+				transition: all 0.3s;
+			}
+			.grow:hover {
+				margin-top: 0px;
+				width: 160px;
+				height: 160px;
+				border-radius: 80px;
+			}
+
+			.boxCont {
+				width: 80%;
+				border-radius: 20px;
+				border: solid #30D020 4px;
+				padding: 10px;
+				overflow: auto;
+ 				white-space: nowrap;
+			}
+			.box {
+				display: inline-block;
+				width: 220px;
+				height: 220px;
+				border-radius: 10px;
+				border: solid #30D020 2px;
+				background-color: white;
+				padding: 10px;
+				margin: 3px;
 				
 			}
-		</style>
+			.box:hover {
+				border: solid #381bff 5px;
+				margin: 0px;
+			}
 
+		</style>
 	</head>
 	<body>
 
-		<div style="padding: 10px;">
-			<a href="index.html" style="padding: 10px;">Home</a>
-			<a href="https://github.com/vince8nt" target="_blank" style="padding: 10px;">
-				<img src="images/github.svg" alt="Github" style="size:  height: 30px; width: 30px;">
-			</a>
-			<a href="https://www.linkedin.com/in/vincent-titterton-9354a6144/" target="_blank" style="padding: 10px;">
-				<img src="images/linkedin.svg" alt="Linkedin" style="size:  height: 30px; width: 30px;">
-			</a>
-			<a href="images/resume.pdf" target="_blank" style="padding: 10px;">
-				<img src="images/resume.svg" alt="Resume" style="size:  height: 30px; width: 30px;">
-			</a>
-			<a href="mailto:vince8nt@gmail.com" target="_blank" style="padding: 10px;">
-				<img src="images/email.svg" alt="Email" style="size:  height: 30px; width: 30px;">
-			</a>
-			<a href="https://www.hackerrank.com/vince8nt" target="_blank" style="padding: 10px;">
-				<img src="images/hackerrank.svg" alt="Hackerrank" style="size:  height: 30px; width: 30px;">
-			</a>
-		</div>
+		<!-- nav bar -->
+		<ul style="padding: 10px; list-style-type: none;">
+			<li>
+				<a href = "https://github.com/vince8nt" target = "_blank" title = "My Github">
+					<img src = "images/github.svg" alt = "Github">
+				</a>
+			</li>
+			<li>
+				<a href = "https://www.linkedin.com/in/vincent-titterton-9354a6144/" target = "_blank" title = "My Linkedin">
+					<img src = "images/linkedin.svg" alt = "Linkedin">
+				</a>
+			</li>
+			<li>
+				<a href = "images/resume.pdf" target = "_blank" title = "My Resume">
+					<img src = "images/resume.svg" alt = "Resume">
+				</a>
+			</li>
+			<li>
+				<a href = "https://www.hackerrank.com/vince8nt" target = "_blank" title = "My Hackerrank">
+					<img src = "images/hackerrank.svg" alt = "Hackerrank">
+				</a>
+			</li>
+		</ul>
 
-		<div style="color: green; text-align: center; padding-top: 150px; padding-bottom: 200px; font-family: Verdana;">
-			<h1>Vincent Titterton</h1>
-			<img class = "img-circle" src="images/vincent.png" alt="Vincent">
-			<h2>Studies Computer Science at the University of California, Santa Cruz</h2>
-		</div>
+		<br>
 
-		<div style="color: blue; text-align: center; font-family: Verdana;">
-			<h1>Some of my Projects:</h1>
-		</div>
+		<center>
 
-		<div class="container-fluid" >
-			
-			<div class="row" style="text-align: center;">
-
-				<div class="col-sm-6">
-
-					<div style="padding: 10px;">
-						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
-							<img src="images/battleship.png" class="card-img-top" alt="Battleship">
-							<div class="card-body" style="background-color: lightgray;">
-							    <h5 class="card-title">Battleship</h5>
-							    
-					    		<p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">Java</p>
-					    		<p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">Swing</p>
-
-							    <p class="card-text">A single player battleship game where
-							     the goal is to sink all 5 ships in as few moves as possible.
-							     Before the game starts, ships are randomly assigned locations
-							     where they don't overlap.</p>
-							</div>
-							<div class="card-footer">
-								<a href="https://github.com/vince8nt/BattleShip" target="_blank" class="btn btn-primary">Source Code</a>
-							</div>
-						</div>
-					</div>
-
-					<div style="padding: 10px;">
-						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
-							<img src="images/connect4.png" class="card-img-top" alt="ConnectFour">
-							<div class="card-body" style="background-color: lightgray;">
-							    <h5 class="card-title">Connect Four</h5>
-							    
-					    		<p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">Java</p>
-						    
-							    <p class="card-text">Simple two player text-based connect four game.
-							     Has a message for winning/loosing/tying and then terminates the program.</p>
-							</div>
-							<div class="card-footer">
-								<a href="https://github.com/vince8nt/connect4" target="_blank" class="btn btn-primary">Source Code</a>
-							</div>
-						</div>
-					</div>
-
-					<div style="padding: 10px;">
-						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
-							<img src="images/connectedComponentFinder.png" class="card-img-top" alt="Connected Component Finder">
-							<div class="card-body" style="background-color: lightgray;">
-							    <h5 class="card-title">Connected Component Finder</h5>
-							    <p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">C</p>
-							    <p style="display: inline-block; padding: 2px; border: solid purple 2px; border-radius: 8px; color: purple;">Depth First Search</p>
-							    <p class="card-text">A program that finds the connected components an unweighted,
-							     directed graph. Connected components are maximized, cyclic sub-graphs. The program takes in two arguments, an input file and an output file. The input file
-							     lists the starting vertex along with the graph represented as an adjacency list. Depth first search is used to find the sub-graphs.</p>
-							</div>
-							<div class="card-footer">
-								<a href="https://github.com/vince8nt/CSE-101/tree/master/pa5" target="_blank" class="btn btn-primary">Source Code</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-sm-6">
-
-					<div style="padding: 10px;">
-						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
-							<img src="images/ticTacToe.png" class="card-img-top" alt="Tic Tac Toe">
-							<div class="card-body" style="background-color: lightgray;">
-							    <h5 class="card-title">Tic Tac Toe</h5>
-							    <p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">Python</p>
-							    <p class="card-text">Player vs computer connect-4. Computer's AI uses Depth First Search with depth 8. When the 8th move is reached without a guaranteed win or loss, a non-recursive position rating method is used. This method uses common connect-4 strategy to get a rough estimate of who the position favors, and by how much. With this, the computer will determine which move guarantees the best position 8 moves in the future.</p>
-							</div>
-							<div class="card-footer">
-								<a href="https://github.com/vince8nt/tic-tac-toe" target="_blank" class="btn btn-primary">Source Code</a>
-							</div>
-						</div>
-					</div>
-
-					<div style="padding: 10px;">
-						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
-							<img src="images/shortestPathFinder.png" class="card-img-top" alt="Shortest Path Finder">
-							<div class="card-body" style="background-color: lightgray;">
-							    <h5 class="card-title">Shortest Path Finder</h5>
-							    <p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">C</p>
-							    <p style="display: inline-block; padding: 2px; border: solid purple 2px; border-radius: 8px; color: purple;">Breadth First Search</p>
-							    <p class="card-text">A program that finds the shortest path between two
-							     vertices on an unweighted graph. The program takes in two arguments, an
-								 input file and an output file. The input file lists the start and end verticies
-								 along with the graph represented as an adjacency list. Breadth first search is
-								 used to find the path.</p>
-							</div>
-							<div class="card-footer">
-								<a href="https://github.com/vince8nt/CSE-101/tree/master/pa4" target="_blank" class="btn btn-primary">Source Code</a>
-							</div>
-						</div>
-					</div>
-
-					<div style="padding: 10px;">
-						<div class="card" style="width: 32rem; padding: 10px; border: solid lightgray 2px; border-radius: 20px; display: inline-block;">
-							<img src="images/bigInteger.png" class="card-img-top" alt="Big Integer">
-							<div class="card-body" style="background-color: lightgray;">
-							    <h5 class="card-title">Big Integer ADT</h5>
-							    <p style="display: inline-block; padding: 2px; border: solid blue 2px; border-radius: 8px; color: blue;">C++</p>
-							    <p class="card-text">A big integer ADT (integer of unlimited length).
-							     Made from a linked list of chars representing each digit. Overloads
-							     the basic integer operations for: + - = / % ^ . </p>
-							</div>
-							<div class="card-footer">
-								<a href="https://github.com/vince8nt/CSE-111/tree/master/asg1" target="_blank" class="btn btn-primary">Source Code</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
+			<!-- header -->
+			<h1 style = "color: white; font-family: Arial Black;">Vincent Titterton</h1>
+			<div style = "height: 164px; ">
+				<a href="index.html">
+					<img src = "images/vincent.png" class = "grow">
+				</a>
 			</div>
+			<h2 style = "color: #30D020; font-family: Arial Black;">Computer Science B.S. major at UCSC</h2>
 			
-		</div>
-
-
-		<div class="row">
-		</div>
-
-		<div class="container-fluid" style="border-top: solid lightblue 8px; background-color: lightgray; padding: 10px; align-self: bottom;">
-			<div class="row">
-				<div class="col-sm-4">
-					<p>
-						© 2020 Vincent Titterton.
-					</p>
+			<div class = "boxCont">
+				<div class = "box">
+					<p>hello</p>
 				</div>
-				<div class="col-sm-4">
-					<p>
-						made with Bootstrap
-					</p>
+				
+				<div class = "box">
+					<p>hello</p>
 				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/vince8nt/vince8nt.github.io" target="_blank">Source Code</a>
+				
+				<div class = "box">
+					<p>hello</p>
 				</div>
 			</div>
-		</div>
+			<br>
+			<div class = "boxCont">
+				<div class = "box">
+					<p>hello</p>
+				</div>
+				
+				<div class = "box">
+					<p>hello</p>
+				</div>
+				
+				<div class = "box">
+					<p>hello</p>
+				</div>
+			</div>
+			<br>
+		</center>
 
+		<!-- footer -->
+		<div style = "width: fill; border-top: solid #30D020 4px; border-left: 0px; background-color: #381bff; padding: 8px;">
+			<p style = "color: white; font-family: Arial Black;">© 2020 Vincent Titterton.</p>
+		</div>
+		
 	</body>
 </html>
