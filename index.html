@@ -57,11 +57,14 @@
 				background-color: white;
 				padding: 10px;
 				margin: 3px;
-				
+				white-space: normal;
 			}
 			.box:hover {
 				border: solid #381bff 5px;
 				margin: 0px;
+			}
+			.box > * {
+				display: flex;
 			}
 
 		</style>
@@ -105,17 +108,17 @@
 			</div>
 			<h2 style = "color: #30D020; font-family: Arial Black;">Computer Science B.S. major at UCSC</h2>
 			
-			<div class = "boxCont">
-				<div class = "box">
-					<p>hello</p>
+			<div class = "boxCont"> <!-- battleship -->
+				<div class = "box" style = "background-color: lightblue;">
+					<h1 style = "color: red; font-family: Arial Black;">Battleship</h1>
 				</div>
 				
 				<div class = "box">
-					<p>hello</p>
+					<a>A single player battleship game where the goal is to sink all 5 ships in as few moves as possible. Before the game starts, ships are randomly assigned locations where they don't overlap.</a>
 				</div>
 				
 				<div class = "box">
-					<p>hello</p>
+					<a>hello</a>
 				</div>
 			</div>
 			<br>
