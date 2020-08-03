@@ -26,6 +26,11 @@
 			}
 			li a img { height: 30px; width: 30px; }
 
+			.filterWhite {
+				/* filter black svg to #FFFFFF (white) */
+				filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(254deg) brightness(106%) contrast(100%);
+			}
+
 			.grow {
 				margin-top: 8px;
 				width: 144px;
@@ -63,8 +68,11 @@
 				border: solid #381bff 5px;
 				margin: 0px;
 			}
-			.box > * {
+			.boxInt {
 				display: table-cell;
+			}
+			.boxInt > * {
+				display: block;
 			}
 
 		</style>
@@ -109,32 +117,38 @@
 			<h2 style = "color: #30D020; font-family: Arial Black;">Computer Science B.S. major at UCSC</h2>
 			
 			<div class = "boxCont"> <!-- battleship -->
-				<div class = "box" style = "background-color: lightblue;">
-
-					<h1 style = "color: red; font-family: Arial Black;">Battleship</h1>
-				</div>
-				
-				<div class = "box">
-					<a>A single player battleship game where the goal is to sink all 5 ships in as few moves as possible. Before the game starts, ships are randomly assigned locations where they don't overlap.</a>
-				</div>
-				
-				<div class = "box">
-					<a>hello</a>
-				</div>
+				<div class = "box" style = "background-color: lightblue;"><div class = "boxInt">
+					<h1 style = "color: red; font-family: Arial Black; line-height: 100px;">Battleship</h1>
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
+					<div style = "margin: 8px; padding: 8px; border-radius: 8px; background-color: white;">
+						<a href="https://github.com/vince8nt/BattleShip" target="_blank">Source Code</a>
+					</div>
+				</div></div>
+				<div class = "box" style = "background-color: #88C8FF;"><div class = "boxInt">
+					<img src="images/battleship.png" class="card-img-top" alt="Battleship" style = "width: 181px; height: 218px;">
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Java</div>
+					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Framework: Swing</div>
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<p style = "color: #30D020;">A single player battleship game where the goal is to sink all 5 ships in as few moves as possible. Before the game starts, ships are randomly assigned locations where they don't overlap.</p>
+				</div></div>
 			</div>
 			<br>
+
 			<div class = "boxCont">
-				<div class = "box">
-					<p>hello</p>
-				</div>
-				
-				<div class = "box">
-					<p>hello</p>
-				</div>
-				
-				<div class = "box">
-					<p>hello</p>
-				</div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<p style = "color: #30D020;">hello</p>
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<p style = "color: #30D020;">hello</p>
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<p style = "color: #30D020;">hello</p>
+				</div></div>
 			</div>
 			<br>
 		</center>
