@@ -77,6 +77,21 @@
 				display: block;
 			}
 
+			.try {
+				margin: 8px;
+				padding: 8px;
+				border-radius: 8px;
+				background-color: #000000;
+				color: #30D020;
+				text-decoration: none;
+				font-family: Arial Black;
+				transition: all 0.2s;
+			}
+			.try:hover {
+				background-color: #30D020;
+				color: #000000;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -175,6 +190,9 @@
 			<div class = "boxCont"> <!-- sorter -->
 				<div class = "box" style = "background-color: #9090FF;"><div class = "boxInt">
 					<h1 style = "color: #10FF10; font-family: Arial Black; line-height: 100px;">Sorter</h1>
+					<a class = "try" href="https://vince8nt.github.io/sorter/">
+						Try It Out!
+					</a>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
 					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
@@ -191,10 +209,21 @@
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
 					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Javascript</div>
 					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Framework: HTML Canvas</div>
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Algorithms: To be added</div> <!-- TODO: add algs -->
+					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Algorithms:
+						Bubble Sort,
+						Insertion Sort,
+						Selection Sort,
+						Cocktail Shaker Sort,
+						Quicksort,
+						Counting Sort,
+						Radix Sort,
+						Merge Sort,
+						In-Place Merge Sort,
+						Heap Sort
+					</div>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">A sorting program. Includes a graph of adjustable size and a GUI made with a custom button class. Eight different sorting algorithms are available to choose from. The sorting process is done with separate frames for each array operation to be visually appealing.</a>
+					<a style = "color: #30D020;">A sorting program. Includes a graph of adjustable size and a GUI made with a custom button class. Ten different sorting algorithms are available to choose from. The sorting process is done with individual frames for each array operation. After each sort is complete, runtime statistics are displayed.</a>
 				</div></div>
 			</div>
 			
