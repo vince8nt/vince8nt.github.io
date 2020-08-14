@@ -74,6 +74,22 @@
 				display: block;
 			}
 
+			.scButton {
+				width: 100px;
+				padding: 4px;
+				border: solid #30D020 2px;
+				border-radius: 8px;
+				background-color: #30D020;
+				color: #000000;
+				text-decoration: none;
+				transition: all 0.2s;
+
+			}
+			.scButton:hover {
+				background-color: #000000;
+				color: #30D020;
+			}
+
 			.try {
 				width: 100px;
 				margin: 8px;
@@ -88,6 +104,22 @@
 			.try:hover {
 				background-color: #30D020;
 				color: #000000;
+			}
+
+			.opBox {
+				margin-top: 10px;
+				border-radius: 20px;
+				border: solid #30D020 4px;
+				padding: 10px;
+				color: #30D020;
+				display: flex;
+				justify-content: space-between;
+			}
+			.opBox > * {
+				display: block;
+				margin-top: auto;
+				margin-bottom: auto;
+				
 			}
 
 		</style>
@@ -266,6 +298,20 @@
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
 					<a style = "color: #30D020;">Player vs computer Tic Tac Toe. Computer uses Depth First Search to check all possible moves. It will guarentee a win when possible, and if not, it will guarentee a tie.</a>
 				</div></div>
+			</div>
+
+			<div style = "width: 70%; margin-top: 100px;"> <!-- other projects -->
+				<h1 style = "color: #30D020; font-family: Arial Black;">Other projects</h1>
+				<div class = "opBox">
+					<a style = "font-family: Arial Black; font-size: 20px;">Sling Shot</a>
+					<a>Java / Swing</a>
+					<a class = "scButton" href="https://github.com/vince8nt/SlingShot" target = "_blank">Source Code</a>
+				</div>
+				<div class = "opBox">
+					<a style = "font-family: Arial Black; font-size: 20px;">Collatz Conjecture</a>
+					<a>Java</a>
+					<a class = "scButton" href="https://github.com/vince8nt/Collatz-Conjecture-" target = "_blank">Source Code</a>
+				</div>
 			</div>
 			
 		</center>
