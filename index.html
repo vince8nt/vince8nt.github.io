@@ -212,7 +212,7 @@
 					<a style = "color: #30D020;">A sorting algorithm invented by me. Uses divide and conquer by finding the median of a given sub-array and recursively calling itself with the sub-arrays on each side of the median.</a>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">The median is discovered by making 2 equally sized (or off by 1) heaps within the subarray. The heap on the left is a backwards max heap, and on the right is a min heap. Then, while the root of the backwards max heap is greater than the root of the min heap: swap the two roots and heapify both heaps.</a>
+					<a style = "color: #30D020;">The median is discovered by making 2 equally sized (or off by 1) heaps within the subarray. The heap on the left is a backwards max heap, and on the right is a min heap. During the creation of these two heaps, elements are swapped between the two to ensure that the min heap is strictly greater than or equal to the max heap.</a>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
 					<a style = "color: #30D020;">At this point, the root of the backwards max heap is the median of the sub-array. It is also in its final position. Now it recursively calls itself with the sub-arrays on each side of the median.</a>
