@@ -169,8 +169,38 @@
 			<h2 style = "color: #30D020; font-family: Arial Black;">M.S. Computer Science, UC Santa Cruz</h2>
 			<br><br><br><br><br>
 
-
+			<!-- Notable Projects -->
 			<h1 style = "color: #30D020; font-family: Arial Black;">Notable Projects</h1>
+
+			<div class = "boxCont"> <!-- Blocky World -->
+				<div class = "box" style = "background-color: rgba(62, 103, 77, 0.605);"><div class = "boxInt">
+					<h2 style = "color: white; font-family: Arial Black; line-height: 100px;">Blocky World</h2>
+					<a class = "try" href="https://vince8nt.github.io/Blocky_World/">
+						Try It Out!
+					</a>
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
+					<a class = "scButton" href="https://github.com/vince8nt/Blocky_World" target="_blank">Source Code</a>
+				</div></div>
+				<div class = "box" style = "background-color: rgb(157, 204, 232);"><div class = "boxInt">
+					<img src="images/blockyWorld.png" alt="Path Finder BFS" style = "width: 218px;">
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Javascript</div>
+					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Framework: WebGL, HTML Canvas</div>
+					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Algorithms: Vertex Shaders, Fragment Shaders, Phong Lighting, Surface Culling</div>
+				</div></div>
+				<div class = "box" style = "background-color: black;"><div class = "boxInt">
+					<a style = "color: #30D020;">
+						A 3d world made of cubes, developed in WebGL.
+						Uses custom vertex and fragment shaders to implement textures and Phong Lighting.
+						Uses surface culling optimizations to reduce the number of rendered triangles.
+						Includes moving and animated NPCs.
+					</a>
+				</div></div>
+			</div>
+
 
 			<div class = "boxCont"> <!-- path finder -->
 				<div class = "box" style = "background-color: blue;"><div class = "boxInt">
@@ -195,40 +225,15 @@
 					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Algorithms: Depth First Search, Dijkstra</div>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">A shortest path finding program. Includes a 20 x 10 graph with a GUI for setting start / end squares and placing / deleting barriers. It also includes a pull down menu to select between two path-finding algorithms (Breadth First Search and Dijkstra's algorithm). Dijkstra's algorithm enables diagonal moves which have 1.414 units of distance.</a>
+					<a style = "color: #30D020;">
+						A shortest path finding program.
+						Includes a 20 x 10 graph with a GUI for setting start / end squares and placing / deleting barriers.
+						It also includes a pull down menu to select between two path-finding algorithms (Breadth First Search and Dijkstra's algorithm).
+						Dijkstra's algorithm enables diagonal moves which have 1.414 units of distance.
+					</a>
 				</div></div>
 			</div>
 
-			<div class = "boxCont"> <!-- median heap sort -->
-				<div class = "box" style = "background-color: lightgreen;"><div class = "boxInt">
-					<h1 style = "color: blue; font-family: Arial Black; line-height: 100px;">Median Heap Sort</h1>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
-					<a class = "scButton" href="https://github.com/vince8nt/MedianHeap" target="_blank">Source Code</a>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<h3 style = "color: #30D020;">Want a Visual Representation?</h3>
-					<a style = "color: #30D020; margin-bottom: 10px;">I've implemented Median Heap Sort and Bottom-up Median Heap Sort in my Sorter program.</a>
-					<a class = "scButton" href="https://vince8nt.github.io/sorter/">Try It Out</a>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Java</div>
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Min Heap / Heapify, Max Heap / Heapify, Divide and Conquer</div>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">A sorting algorithm invented by me. Uses divide and conquer by finding the median of a given sub-array and recursively calling itself with the sub-arrays on each side of the median.</a>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">The median is discovered by making 2 equally sized (or off by 1) heaps within the subarray. The heap on the left is a backwards max heap, and on the right is a min heap. During the creation of these two heaps, elements are swapped between the two to ensure that the min heap is strictly greater than or equal to the max heap.</a>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">At this point, the root of the backwards max heap is the median of the sub-array. It is also in its final position. Now it recursively calls itself with the sub-arrays on each side of the median.</a>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">Program takes 2 arguments, an input file and an output file. The input file should be space seperated integers. The first integer, n, is the length of the array. The next n integers are the values. The sorted array will be printed to the output file.</a>
-				</div></div>
-			</div>
 
 			<div class = "boxCont"> <!-- connect four -->
 				<div class = "box" style = "background-color: red;"><div class = "boxInt">
@@ -246,9 +251,15 @@
 					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Algorithm: Depth First Search</div>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">Player vs computer connect-4. Computer's AI uses Depth First Search with depth 8. When the 8th move is reached without a guaranteed win or loss, a non-recursive position rating method is used. Backtracking is used to return the board to its previous state after each recursive call.</a>
+					<a style = "color: #30D020;">
+						Player vs computer connect-4.
+						Computer's AI uses Depth First Search with depth 8.
+						When the 8th move is reached without a guaranteed win or loss, a non-recursive position rating method is used.
+						Backtracking is used to return the board to its previous state after each recursive call.
+					</a>
 				</div></div>
 			</div>
+
 
 			<div class = "boxCont"> <!-- sorter -->
 				<div class = "box" style = "background-color: #9090FF;"><div class = "boxInt">
@@ -261,10 +272,10 @@
 					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
 					<a class = "scButton" href="https://github.com/vince8nt/sorter" target="_blank">Source Code</a>
 				</div></div>
-				<div class = "box" style = "background-color: lightblue;"><div class = "boxInt">
+				<div class = "box" style = "background-color: rgb(0, 0, 0);"><div class = "boxInt">
 					<img src="images/sorterUnsorted.png" alt="Sorter Unsorted" style = "width: 218px; height: 218px;">
 				</div></div>
-				<div class = "box" style = "background-color: lightblue;"><div class = "boxInt">
+				<div class = "box" style = "background-color: rgb(0, 0, 0);"><div class = "boxInt">
 					<img src="images/sorterSorted.png" alt="Sorter Sorted" style = "width: 218px; height: 218px;">
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
@@ -284,9 +295,15 @@
 					<a style = "color: #30D020;">A sorting program that includes a graph of adjustable size and a GUI made with a custom button class.</a>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">23 different sorting algorithms are available to choose from. There are also four different array value-sets to choose from along with 7 non-sorting algorithms (ex: shuffle). The sorting process is done with individual frames for each array operation. After each sort is complete, runtime statistics are displayed.</a>
+					<a style = "color: #30D020;">
+						23 different sorting algorithms are available to choose from.
+						There are also four different array value-sets to choose from along with 7 non-sorting algorithms (ex: shuffle).
+						The sorting process is done with individual frames for each array operation.
+						After each sort is complete, runtime statistics are displayed.
+					</a>
 				</div></div>
 			</div>
+
 
 			<div class = "boxCont"> <!-- MineSweeper -->
 				<div class = "box" style = "background-color: #C8C8C8;"><div class = "boxInt">
@@ -299,65 +316,25 @@
 					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
 					<a class = "scButton" href="https://github.com/vince8nt/minesweeper" target="_blank">Source Code</a>
 				</div></div>
-				<div class = "box" style = "background-color: white;"><div class = "boxInt">
-					<img src="images/minesweeperBig.png" alt="Minesweeper Big" style = "width: 218px;">
-				</div></div>
-				<div class = "box" style = "background-color: white;"><div class = "boxInt">
-					<img src="images/minesweeperBigLose.png" alt="Minesweeper Big Lose" style = "width: 218px;">
-				</div></div>
-				<div class = "box" style = "background-color: white;"><div class = "boxInt">
-					<img src="images/minesweeperSmall.png" alt="Minesweeper Small" style = "width: 218px;">
+				<div class = "box" style = "background-color: rgb(119, 119, 119);"><div class = "boxInt">
+					<img src="images/minesweeper.png" alt="Minesweeper" style = "width: 218px;">
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
 					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Javascript</div>
 					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Framework: HTML Canvas</div>
 				</div></div>
 				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">Classic Minesweeper coded in JavaScript. Features a board of adjustable size with an adjustable number of tiles. Takes inputs from left and right click. Recursive algorithm used to discover adjacent tiles when a non-number, non-mine tile is uncovered.</a>
-				</div></div>
-			</div>
-			
-			<div class = "boxCont"> <!-- battleship -->
-				<div class = "box" style = "background-color: lightblue;"><div class = "boxInt">
-					<h1 style = "color: red; font-family: Arial Black; line-height: 100px;">Battleship</h1>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
-					<a class = "scButton" href="https://github.com/vince8nt/BattleShip" target="_blank">Source Code</a>
-				</div></div>
-				<div class = "box" style = "background-color: #88C8FF;"><div class = "boxInt">
-					<img src="images/battleship.png" alt="Battleship" style = "width: 181px; height: 218px;">
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Java</div>
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Framework: Swing</div>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<p style = "color: #30D020;">A single player battleship game where the goal is to sink all 5 ships in as few moves as possible. Before the game starts, ships are randomly assigned locations where they don't overlap.</p>
+					<a style = "color: #30D020;">
+						Classic Minesweeper coded in JavaScript.
+						Features a board of adjustable size with an adjustable number of tiles.
+						Takes inputs from left and right click.
+						Recursive algorithm used to discover adjacent tiles when a non-number, non-mine tile is uncovered.
+					</a>
 				</div></div>
 			</div>
 
-			<div class = "boxCont"> <!-- tic tac toe -->
-				<div class = "box" style = "background-color: pink;"><div class = "boxInt">
-					<h1 style = "color: blue; font-family: Arial Black; line-height: 100px;">Tic Tac Toe</h1>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<img class = "filterWhite" src = "images/github.svg" style = "width: 80px; height: 80px;">
-					<a class = "scButton" href="https://github.com/vince8nt/tic-tac-toe" target="_blank">Source Code</a>
-				</div></div>
-				<div class = "box" style = "background-color: #2A2A2A;"><div class = "boxInt">
-					<img src="images/ticTacToe.png" alt="Tic Tac Toe" style = "width: 218px; height: 218px;">
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Language: Python</div>
-					<div style = "margin: 8px; padding: 8px; border: solid white 2px; border-radius: 8px; color: white;">Algorithm: Depth First Search</div>
-				</div></div>
-				<div class = "box" style = "background-color: black;"><div class = "boxInt">
-					<a style = "color: #30D020;">Player vs computer Tic Tac Toe. Computer uses Depth First Search to check all possible moves. It will guarentee a win when possible, and if not, it will guarentee a tie.</a>
-				</div></div>
-			</div>
+
 			<br><br><br><br><br>
-
 
 
 			<div style = "width: 70%; margin-top: 100px;"> <!-- other projects -->
@@ -494,7 +471,7 @@
 
 		<!-- footer -->
 		<div style = "width: fill; border-top: solid #30D020 4px; border-left: 0px; background-color: #381bff; padding: 25px; margin-top: 60px;">
-			<a style = "color: white; font-family: Arial Black;">© 2020 Vincent Titterton.</a>
+			<a style = "color: white; font-family: Arial Black;">© 2025 Vincent Titterton.</a>
 			<a class = "scButton" style = "margin-left: 150px" href = "https://github.com/vince8nt/vince8nt.github.io" target = "_blank">Website Repository</a>
 		</div>
 		
